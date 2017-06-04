@@ -1,0 +1,99 @@
+html,body{
+    font-family: 'Alice', serif;
+}
+.marginTop70PX{margin-top: 70px;}
+.backgroundColorBlack {background-color: #FFC349;}
+.colorWhite{color:white;}
+.colorLightGray{color:#9d9d9d;}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+    z-index: 2;
+    color: #fff;
+    background-color: #FFC349;
+    border-color: #FFC349;
+}
+.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
+    color: #FFC349;
+    background-color: #fff;
+}
+.btn-darck{
+    color: #9d9d9d;
+    background-color: #FFC349;
+    border-color: #FFC349;
+}
+.btn-darck:hover{
+    color: #fff;
+    background-color: #FFC349;
+    border-color: #FFC349;
+}
+.btn-darck:focus{
+    color: #fff;
+}
+.paddingLeftRight3PX{padding-left: 3px;padding-right: 3px;}
+.fontSize16PX{font-size: 16px;}
+.vkLike:hover{color:white;cursor: pointer;}
+.positionFixed{
+    position: fixed;
+}
+.width25PER{width: 20%;}
+.width18PER{width: 20%;}
+
+.marginBottom20PX{
+    margin-bottom: 20px;
+}
+.paddingTopBottom40px{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.marginBottom0PX{
+    margin-bottom: 0px;
+}
+
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+     background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+
+}
+.navbar-toggle .icon-bar:nth-of-type(3) {
+
+}
+.navbar-toggle .icon-bar {
+    position: relative;
+    transition: all 200ms ease-in-out;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(4) {
+    transform: rotate(45deg);
+    top:-6px;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+    transform: rotate(-45deg);
+    top:6px;
+
+}
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+    background-color: transparent !important;
+}
+
+.btn, .form-control, .alert, .input-group-addon {
+    border-radius: 0px;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.alert {
+    text-align: left;
+}
