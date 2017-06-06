@@ -21,7 +21,7 @@
     var sendNewItemButton = document.getElementById("send_new_item");
 
     addListenerForButtonsForm();
-    
+
     function sendMessage(){
         removeListenerForButtonsForm();
         var parent = this.parentNode;
@@ -92,9 +92,9 @@
     function sendData(url,formData, element, form){
         $.ajax({
             url: url,
-            type: "POST",
+            method: 'POST',
             data: formData,
-            dataType: "json",
+            dataType: 'json',
             processData: false,  // tell jQuery not to process the data
             contentType: false,   // tell jQuery not to set contentType
             success: function(data){

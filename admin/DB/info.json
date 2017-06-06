@@ -1,7 +1,6 @@
-{
-  "email": "zankoav@mail.ru",
-  "password": "2bcd25302c4f599ed3586aa88f47be9e",
-  "title": "Fofan",
+{"email":"zankoav@mail.ru",
+  "password":"2bcd25302c4f599ed3586aa88f47be9e",
+  "title":"For-fun",
   "sub_title": " - сайт смешных картинок",
-  "icon": "icon.png"
-}
+  "icon":"icon.png"
+ }
