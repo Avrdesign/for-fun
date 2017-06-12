@@ -2,6 +2,7 @@ html,body{
     font-family: 'Alice', serif;
 }
 .marginTop70PX{margin-top: 70px;}
+.marginBottom15PX{margin-bottom: 15px !important;}
 .backgroundColorBlack {background-color: #FFC349;}
 .colorWhite{color:white;}
 .colorLightGray{color:#9d9d9d;}
@@ -32,7 +33,7 @@ html,body{
 .fontSize16PX{font-size: 16px;}
 .vkLike:hover{color:white;cursor: pointer;}
 .positionFixed{ position: fixed !important; }
-.width25PER{width: 20%;}
+.width25PER{width: 25%;}
 .width18PER{width: 20%;}
 
 .marginBottom20PX{
@@ -93,4 +94,8 @@ html,body{
 
 .alert {
     text-align: left;
+}
+
+.vkLike{
+    clear: none !important;
 }

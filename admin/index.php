@@ -3,7 +3,7 @@ session_start();
 require_once 'api/utils.php' ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -20,36 +20,36 @@ require_once 'api/utils.php' ?>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script defer src="../src/js/bootstrap.min.js"></script>
 
-</head>
+  </head>
 
-<body>
-<?php
-$email = $_POST["email"];
-$password = $_POST["password"];
+  <body>
+  <?php
+    $email = $_POST["email"];
+    $password = $_POST["password"];
 
-if (isset($_SESSION["email"],$_SESSION["password"])){
-    $email = $_SESSION["email"];
-    $password = $_SESSION["password"];
-}
+    if (isset($_SESSION["email"],$_SESSION["password"])){
+        $email = $_SESSION["email"];
+        $password = $_SESSION["password"];
+    }
 
-if( isset($email,$password)){
-    $access = validateUser($email,$password);
-    if ($access["status"]){
-        $admin = initAdmin();
-        $_SESSION["email"] = $email;
-        $_SESSION["password"] = $password;
-        require_once 'views/admin_panel.php';
-    }else{
+    if( isset($email,$password)){
+        $access = validateUser($email,$password);
+        if ($access["status"]){
+            $admin = initAdmin();
+            $_SESSION["email"] = $email;
+            $_SESSION["password"] = $password;
+            require_once 'views/admin_panel.php';
+        }else{
+            require_once 'views/admin_form.php';
+        }
+    }else {
         require_once 'views/admin_form.php';
     }
-}else {
-    require_once 'views/admin_form.php';
-}
-?>
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  ?>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
-</body>
+  </body>
 </html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e5f14637-1e39-4f4a-bfae-c975c608e21f" name="Fofan-master" url="http://fofan-master">
+        <fileTransfer port="0" mountedRoot="D:\WEB-learning\PHP-MySQL\PhpStorm\Fofan-master" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
